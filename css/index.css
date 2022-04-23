@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.top-header{
+    position: fixed;
+    
+    position: relative;
+    
+}
+.header-container{
+    display: flex;
+    background-color: #1c3961;
+    justify-content: space-between;
+    height:35px;
+    padding-top: 15px;
+    width: 100%;
+}
+.top-header-left {
+    display: flex;
+    margin-left: 50px;
+}
+.top-header-left a{
+    padding: 10px 20px;
+}
+
+.top-header-right{
+display: flex;
+padding-right: 50px;
+}
+.social-list a{
+    margin:0px 10px;
+}
+.social-list{
+    display: flex;
+    list-style-type:none ;
+    margin-right:50px; 
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    background-color:#718ecc;
+    display: flex;
+}
+.logo img{
+    margin: 0px 20px;
+    border-radius:10px;
+}
+.navbar-content ul{
+    display: flex;
+    list-style: none;
+}
+.navbar-content ul li:last-child{
+    margin: 15px 40px;
+}
+.navbar-content ul li {
+    text-decoration: none;
+    margin: 15px 40px;
+}
+.navbar-content a,.header-container a{
+    color: white;
+}
+
+.sub-menu1{
+    display: none;
+}
+
+.navbar-content ul li:hover .sub-menu1{
+    display: block;
+    position: fixed;
+    z-index: 1;
+}
+.navbar-content ul li:hover .sub-menu1 ul{
+    display: block;
+    background-color: #718ecc;
+    height: 180px;
+    width:200px;
+   
+
+}
+.navbar-content ul li:hover .sub-menu1 ul li{
+
+border-bottom:1px solid white;
+padding: 5px;
+padding-right: 150px;
+position: relative;
+}
+.query-section{
+    width: 100%;
+padding: 30px 30px;
+text-align: center;
+font-size: 1.8rem;
+font-family: 'Raleway', sans-serif;
+background: #f5f1f1;
+}
+.query-section .container p a{
+    color: #1c3961;
+    padding: 10px 90px;
+    
+}
+footer{
+    background: #122541;
+    color: #ffff;
+    height: 60vh;
+    width: 100%;
+}
+.footer-container{
+    display: flex;
+    justify-content:space-between;
+
+}
+footer li{
+    list-style: none;
+}
+footer a{color: white;
+}
+.foot1 a{
+    padding: 10px 2px;
+}
+.foot1{
+    width: 20%;
+}
+.textft{
+    padding-top: 20px;
+    line-height: 40px;
+}
+
+
+    /* responsive for navbar1 */
+    @media screen and (max-width: 600px) {
+        .header-container, .top-header-left, .top-header-right, .header-container a,nav{
+            display: block;
+            padding-top: 4%;
+            padding-left: 5%;
+        }
+        .login-block {
+            display: flex;
+            margin-left: 6%;
+        }
+
+        .header-container{
+                height: 40vh;
+        }
+        .top-header-right{
+            margin-left: 20%
+        }
+        .navbar-content ul li {
+                display:block;
+                margin: 2px 0px;
+            }
+
+
+    }
+
+.bg{
+    
+    color: rgb(191, 190, 197);
+    text-align: center;
+    padding-top: 220px;
+    background-image: url(../images/background.jpeg);
+    background-attachment: fixed;
+    height: 55vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+}
+
+/* keyframe slider start........... */
+.slider{
+    width:100%;
+    height: 400px;
+    position: relative;
+    margin-top: 20vh;
+
+
+    margin-left: 20px;
+    transform: translate(-2%, -10%);
+    background-image:url(images/newslider/web-1-01.jpg) ;
+    background-size: 100% 100%;
+    box-shadow:none;
+    border:1px solid #0a0624;
+    animation:slider 40s infinite linear;
+
+}
+
+@keyframes slider{
+    0%{background-image: url(../images/gallery-img10.jpg);}
+    10%{background-image: url(../images/slider/APS.jpg);}
+    20%{background-image: url(../images/slider/Beacon-1.jpg);}
+    30%{background-image: url(../images/slider/bloomfield-hall-school.jpg);}
+    40%{background-image: url(../images/slider/LGS-Johar-Town-Senior-girls-campus-5.jpg);}
+    50%{background-image: url(../images/slider/thecityschool.png);}
+    60%{background-image: url(../images/slider/thecity/1187147_207549686084967_1363830872_n.jpg);}
+    70%{background-image: url(../images/slider/thecity/The-City-School-DHA-Campus-Islamabad-1.webp);}
+    80%{background-image: url(../images/slider/karachigrammer/karachi-grammar-school-03.jpg);}
+    90%{background-image: url(../images/slider/karachigrammer/kgs-lead.jpg);}
+    100%{background-image: url(../images/background.jpeg);}
+}
+/* keyframe slider END.............. */
+
+/* resposive for gallery */
+@media screen and (max-width: 600px){
+    
+    .bg{font-size: 24px;
+        margin-right: 0px;
+
+    }
+    
+    .imgbanner2{
+        width: 40%;
+        margin-left: 0px;
+       
+    }
+    #text1{padding-top: 25%;}
+    
+
+}

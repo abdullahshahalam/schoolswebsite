@@ -1,0 +1,16 @@
+.card {
+    box-shadow:none;
+    transition: .5s;
+    width: 30%;
+    margin: 20px 20px;
+    border: 1px solid rgb(231, 219, 219);
+    text-align: center;
+   
+  
+}
+  
+  .container {
+    text-align: center;
+    
+   
+  }
